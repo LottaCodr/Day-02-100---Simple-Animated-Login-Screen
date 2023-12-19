@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    height: 100vh;
+    margin: 70px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+h1 {
+    color: green;
+    font-size: 70px;
+}
+
+
+
+small {
+    overflow: hidden;
+    line-height: 1.5;
+    max-width: 800px;
+    font-size: 20px;
+
+}
+
+.company-info {
+    align-items: center;
+    
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-bottom: 4;
+    
+    margin-top:  auto;
+    margin-bottom:  auto;
+
+    transform: translateY(100%);
+    animation: slideIn 3s ease-out forwards;
+    
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.regscreen {
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+   align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    max-width: auto;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 20px green;
+    transform: translateY(100%);
+    animation: slideIn 2s ease-out forwards;
+    
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #333;
+    font-size: 40px;
+
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 800;
+    height: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.9s;
+    background-color: transparent;
+}
+input::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; 
+    height: 100%;
+    border: 1px solid #ddd;
+    border-left: none;
+}
+
+input::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;
+    height: 100%;
+    der: 1px solid #ddd;
+    border-right: none;
+}
+
+input:focus {
+    outline: none;
+    border-color: green;
+    box-shadow: 0 0 5px rgba(52, 210, 65, 0.5);
+}
+.the-form {
+    height: auto;
+    width: 300px;
+    align-items: top;
+    justify-content: top;
+    margin-right: 200px;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #777;
+    pointer-events: none;
+    z-index: 9;
+    transition: font-size 0.3s, top 0.3s, color 0.3s;
+}
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: font-size 0.3s, color 0.3s;
+    background-color: white;
+    padding: 0 5px;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color:  green;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+    overflow:visible;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    
+    outline: none;
+    background-color: transparent;
+    transform: scaleY(0);
+    animation: scaleIn 0.5s ease-out forwards 0.3s;
+}
+@keyframes scaleIn {
+    to {
+        transform: scaleY(1);
+    }
+}
+
+button {
+    width: 325px;
+    height: 50px;
+    background-color: grey;
+    color: #fff;
+    margin: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.divider {
+    width: 1px;
+    background-color: greenyellow;
+    height: 50%;
+    margin: 0 150px;
+}
+
+img {
+    width: 500px;
+    height: auto;
+    display:flex;
+    
+    
+}
